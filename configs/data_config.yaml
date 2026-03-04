@@ -1,0 +1,29 @@
+data:
+  dataset_name: "stallion"
+  target_column: "volume"
+  time_idx: "time_idx"
+  group_ids: ["agency", "sku"]
+  max_encoder_length: 24
+  max_prediction_length: 6
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  
+  static_categoricals:
+    - "agency"
+    - "sku"
+  
+  time_varying_known_categoricals:
+    - "month"
+    - "special_days"
+  
+  time_varying_known_reals:
+    - "time_idx"
+    - "price_regular"
+    - "discount_in_percent"
+  
+  time_varying_unknown_reals:
+    - "volume"
+    - "log_volume"
+    - "industry_volume"
+    - "soda_volume"
