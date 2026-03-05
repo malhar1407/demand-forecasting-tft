@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: demand-forecasting-tft
+Version: 0.1.0
+Summary: Interpretable demand forecasting using Temporal Fusion Transformers
+Author: Malhar Shinde
+Requires-Python: >=3.8
+Requires-Dist: pytorch-forecasting>=1.0.0
+Requires-Dist: pytorch-lightning>=2.0.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
