@@ -27,7 +27,6 @@ def evaluate_forecast(actual: np.ndarray, predicted: np.ndarray, name: str = "Mo
     metrics = {
         "model": name,
         "mase": mase(actual, predicted, seasonal_period=12),
-        "smape": smape(actual, predicted),
         "mae": np.mean(np.abs(actual - predicted)),
         "rmse": np.sqrt(np.mean((actual - predicted) ** 2)),
     }
